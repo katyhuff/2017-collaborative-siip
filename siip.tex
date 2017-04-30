@@ -36,23 +36,27 @@
           \newcommand{\authorsite}{arfc.npre.illinois.edu}
 
           \begin{document}
-          \title{Open Source, Collaborative Curriculum}
+          \title{Open-Source Collaborative Curriculum}
           \author{\textbf{PI: Kathryn Huff}\\%
-%          \textbf{Co-PI: Neal Davis}\\%
-                  University of Illinois Urbana-Champaign
+                  University of Illinois at Urbana--Champaign
                   \and
-\textbf{Co-PI: Neal Davis}\\University of Illinois Urbana-Champaign
-\and
-Paul Wilson\\University of Wisconsin - Madison 
-\and
-          Steven Skutnik\\University of Tennessee - Knoxville
-\and
-          Anthony Scopatz\\University of South Carolina 
-\and
-          Jeremy Roberts\\Kansas State University 
-\and
-          Robert Borrelli\\University of Idaho at Idaho Falls
-}
+           \textbf{Co-PI: Neal Davis}\\University of Illinois at Urbana--Champaign
+                  \and
+           Paul Wilson\\
+                  University of Wisconsin - Madison 
+                  \and
+          Steven Skutnik\\
+                  University of Tennessee - Knoxville
+                  \and
+          Anthony Scopatz\\
+                  University of South Carolina 
+                  \and
+          Jeremy Roberts\\
+                  Kansas State University 
+                  \and
+          Robert Borrelli\\
+                  University of Idaho at Idaho Falls
+          }
           \maketitle
 
           \pagestyle{fancy}
@@ -62,14 +66,14 @@ Paul Wilson\\University of Wisconsin - Madison
           %\lhead{}
           %\rhead{}
           \lhead{\textcolor{gray}{PI: \authorname (NPRE)\\\authoremail}}
-          \rhead{\textcolor{gray}{Collaborative Open Source Curriculum Development\\}}
+          \rhead{\textcolor{gray}{Open-Source Collaborative Curriculum\\}}
           %\rhead{\textcolor{gray}{\thepage/\totalpages{}}}
           \renewcommand{\headrulewidth}{0pt}
           \renewcommand{\footrulewidth}{0pt}
           %\fancyfoot[C]{\footnotesize \textcolor{gray}{\authorsite}}
 
           \section{Problem}
-          At this very moment, hundreds of professors in the United States are 
+          At this very moment, professors at scores of institutions in the United States are 
           simultaneously preparing lessons on transposing a matrix.
           They are doing so largely without receiving feedback from one another 
           or directly building on one another's experience 
@@ -78,48 +82,56 @@ Paul Wilson\\University of Wisconsin - Madison
           development efforts already tackled by colleagues. What's worse is 
           that these efforts are rarely, if ever, reviewed by, shared with, or 
           extended upon by peers.
+          %Q:  If the process of lesson preparation is valuable in ordering one's thoughts,
+          % doesn't an "on-tap" curriculum sap instructor effectiveness?
           
-          Open source software development provides an excellent 
-          example of a possible solution.
-          These communities have mastered distributed expert collaboration, 
-          dynamic peer review, and de-duplication of effort. In open source 
-          software, developers share code revisions in online repositories, 
+          Open-source software development suggests a possible collaborative solution.
+          These communities have mastered the challenges of distributed expert collaboration, 
+          dynamic peer review, and de-duplication of effort. In open-source 
+          software development workflows, developers share code revisions in online repositories, 
           review one another's work in small chunks \cite{wilson_best_2014}, 
           and contribute back their own improvements to the main project.
+          Thus open-source projects can focus concentration on particularly needed tasks
+          even from diffuse effort.
 
-          So, why aren't professors sharing their lesson materials online, 
+          So why aren't professors sharing their lesson materials online, 
           collaborating on canonical lesson sets, diffing and merging similar 
-          lessons, and reviewing one another's learning materials? \textbf{Our 
-          goal is to explore the possibility that curriculum development for 
-          university courses can operate like open source software development 
-          does.}
-           
+          lessons, and reviewing one another's learning materials?
           Previous attempts at collaborative curriculum development have met with 
-          challenges. Most notable among these is Software Carpentry (with 
-          which the PI and Co-PI are quite involved) 
-          \cite{wilson_software_2014}.  Software Carpentry teaches 
+          challenges, including instructor inertia, an unclear process for collaboration,
+          lack of a committed core team, differing visions, and particular institutional needs.
+          %Q:  Why?  If you raise the question, we need at least a stab at an answer here.
+          % I know for myself the fact that I work in triage is a major factor.
+          \textbf{Given our experience with successsful collaborative curriculum development
+          in niche areas, our goal is to explore the possibility that curriculum development for 
+          university courses can operate as well as open source software development 
+          does.}
+          
+          Most notable among successful efforts is Software Carpentry (a program
+          which the PI and Co-PI have been quite involved with) 
+          \cite{wilson_software_2014}.  Since 2011, the Software Carpentry program has taught 
           computational skills for scientists using a shared curriculum hosted 
-          on GitHub. Hundreds of instructors accross the planet use and remix 
-          the curriculum, but our experience showed that while these 
+          on GitHub. Hundreds of instructors across the planet use and remix 
+          the lesson materials, but our experience showed that while these 
           instructors used and improved on the original material, they rarely 
           contributed their changes back to the master material. Thus, versions 
           of the original material tend to diverge rather than converge 
-          \cite{wilson_software_2014,wilson_software_2014-1}. 
+          \cite{wilson_software_2014,wilson_software_2014-1}.
+          % TODO:  comment on how SWC has successfully surmounted the other challenges noted above
           
-          We expect that 
-          fine-grained modularity of lesson components and a clear dependency 
-          graph of prerequisite modules for each lesson may assist in 
+          We expect a granular lesson plan---combining fine-grained lesson components
+          with a clear dependency graph of prerequisite modules---to assist in 
           overcoming the challenges encountered by Software Carpentry and 
           others.
 
           \section{Proposed Solution}
-          We propose a small-scale proof-of-concept for collaborative, open 
-          source, curriculum development to improve the transfer of lessons 
-          learned between instructors of the same course (either at a single 
-          university or among different campuses). This prototype collaboration 
+          We propose a small-scale proof-of-concept for collaborative
+          open-source curriculum development to improve the \emph{transfer of lessons 
+          learned} between instructors of the same course (either at a single 
+          university or among different campuses). This pilot collaboration 
           will provide a template which could be adopted for collaboration 
           among faculty teaching courses with an inherently larger scale (e.g. 
-          CS101).
+          introductory CS1 courses like CS101).
 
           Faculty in Nuclear Engineering from five institutions\footnote{
           Paul Wilson at (UW Madison), 
@@ -129,70 +141,67 @@ Paul Wilson\\University of Wisconsin - Madison
           and Robert Borrelli (University of Idaho)
           } have agreed to be participants in 
           this prototyping effort. We all currently use 
-          \href{https://github.com}{GitHub} to store, 
-          revise, and collaborate on research, especially source code. 
-          Additionally, this select group already started to host our course 
-          curricula online as well, but these are typically single author 
+          \href{https://github.com}{GitHub} as a platform to store, 
+          revise, and collaborate on research, particularly source code. 
+          Additionally, this select group has already begun to host course 
+          materials online as well, but to date these have typically been single-author 
           repositories (e.g. \cite{huff_npre412_2017}).
 
           The participants will collaborate on a master set of learning 
-          modules for an upper-division course in nuclear engineering : 
+          modules for an upper-division course in nuclear engineering: 
           The Nuclear Fuel Cycle. In the near term, we will develop 
           fine-grained lessons and assessments which may be mixed and matched 
           to meet the learning objectives. The curriculum will be hosted on 
           GitHub, tested by all of us, and improved continually.
 
           Prof. Neal Davis, Co-PI of this proposal, has contemplated a 
-          Collaborative Computational Curriculum for some time 
-          \cite{davis_university_2016}. Since he 
-          teaches large-scale 
-          computational curriculum at UIUC 
-          he is an ideal person to potentially scale-up this work in the 
+          developing a collaborative computational curriculum for some time 
+          \cite{davis_university_2016}. Since he currently
+          teaches large-scale computational curriculum at UIUC 
+          he is an ideal person to potentially scale up this work in the 
           future. Additionally, he has the nuclear engineering background to 
           understand the context of this prototyping effort. Prof. Davis' role 
           in this effort will be to conduct \emph{action research}, observing 
           our process and teasing out potential avenues for future 
           extensions and applications of the process. 
 
-          \subsection{Open Source Workflow}
+          \subsection{Open-Source Workflow}
           Development of this proof-of-concept curriculum will be undertaken 
-          similarly to an open source software project. 
-          In particular, this work will emulate features of open source software development 
-          that cultivate distributed collaboration. In open source, for 
+          similarly to an open-source software project. 
+          In particular, this work will emulate features of open-source software development 
+          that cultivate distributed collaboration. By convention in the open-source community, for 
           example, new code features are described in \emph{issues} or 
           \emph{tickets} and discussed before implementation. Small, atomic 
           changes are reviewed before they are merged into the 
           \emph{repository}. These discussions and incremental reviews nurture 
           communities of practice.
 
-          In a typical open source project, a main copy of the 
+          In a typical open-source project, a main copy of the 
           repository (or main \emph{fork}) holds the 
-          official copy of the software package. Individual developers each have their own 
+          official instance of the software package. Individual developers each have their own 
           \emph{forks} where they can work on features and 
           bug fixes. When the developer makes changes that are ready for prime 
           time, they make a ``pull request'' to the main \emph{fork}. That 
           \emph{pull request} is 
-          reviewed by their collaborators, and it is eventually merged into the 
-          main \emph{fork} where it can be used by all. Figures 
-          \ref{fig:sub1} and \ref{fig:sub2} show how this open source software 
-          development workflow
-          can be leveraged toward course development.
+          reviewed by their collaborators, and if successful it is eventually merged into the 
+          main fork where it can be used by all. Figures 
+          \ref{fig:sub1} and \ref{fig:sub2} show how this open-source software 
+          development workflow can be adapted for lesson development.
 
           \begin{figure}
                   \centering
                   \begin{subfigure}{.4\textwidth}
                             \centering
-                              \includegraphics[width=.8\linewidth]{git-flow}
-        \caption{This figure, from \cite{scopatz_effective_2015}, captures a 
-                          process, often called Git Flow, through which a new 
+                            \includegraphics[width=.8\linewidth]{git-flow}
+          \caption{This process, known as \emph{Git Flow}, through which a new 
                           feature or bug fix enters a piece of open source 
-                          software.}
+                          software\cite{scopatz_effective_2015}.}
                                   \label{fig:sub1}
                   \end{subfigure}\hfill%
                   \begin{subfigure}{.4\textwidth}
                             \centering
-                              \includegraphics[width=.8\linewidth]{siip-flow}
-  \caption{This adaptation imagines the process in the context of learning module development, using the same git version control system and GitHub repository hosting framework.}
+                            \includegraphics[width=.8\linewidth]{siip-flow}
+          \caption{This adaptation of Git Flow reimagines the process in the context of learning module development.}
                                   \label{fig:sub2}
                   \end{subfigure}
                   \label{fig:test}
@@ -215,25 +224,26 @@ Paul Wilson\\University of Wisconsin - Madison
           \subsection{Kick-Off Workshop}
           A two-day kick-off workshop hosted at the University of Illinois at 
           Urbana-Champaign will allow the 
-          participants to sketch the initial framework of 
-          the collaboration and coordinate logistics. Through brainstorming and 
-          discussion activities, the workshop will deliver a number of 
-          products. These products will be published in an online repository 
-          and associated website, both hosted by GitHub. 
+          participants to brainstorm and discuss the scope of the project.
+          Among other potential products, the workshop will deliver
+          a sketch of the initial framework of the collaborative effort and
+          a logistical coordination of responsibilities. These products will
+          be published in an online GitHub repository 
+          and associated website.
 
           Invited participants in the first workshop will include UIUC PI Huff 
-          and UIUC Co-PI Davis, excternal collaborating professors Wilson, 
+          and UIUC Co-PI Davis, external collaborating professors Wilson, 
           Skutnik, Roberts, Scopatz, and Borrelli, and up to 2 UIUC professors 
-          who may be likely to extend this work in the future for their own 
-          courses.
+          who may be interested in adapting and extending this work for their own 
+          future courses.
 
-          As indicated in Table \ref{tab:kickoff}, products to be developed in the first workshop include learning 
-          objectives\cite{bloom_bloom_1984}, a concept 
-          map\cite{novak_concept_1990}, a list of fine-grained lesson topics, a 
-          directed acyclic graph describing dependencies among lessons. Additionally, concrete logistics 
+          As indicated in Table \ref{tab:kickoff}, products to be developed in
+          the first workshop include learning objectives\cite{bloom_bloom_1984}, a concept 
+          map\cite{novak_concept_1990}, an outline of fine-grained lesson modules, and a 
+          graph describing dependencies among lessons. Additionally, concrete logistics 
           for completion will be established, including individual curriculum 
-          development assignments, decisions to adopt specific raw formats 
-          for lesson content (markdown vs. \LaTeX, Jupyter vs MATLAB, etc.), 
+          development assignments; decisions to adopt specific raw formats 
+          for lesson content (markdown vs.\ \LaTeX, Jupyter vs.\ MATLAB, etc.); 
           and a repository structure for organizing the lesson material. At 
           this workshop, interest and compatibility with frameworks like RELATE 
           \cite{kloeckner_relate_2017,kloeckner_relate_2017} and tools like 
@@ -288,15 +298,15 @@ Paul Wilson\\University of Wisconsin - Madison
 
 
           \subsection{Interim Period}
-          Between Workshops, work will commence on developing 
-          lessons. These lessons will be submitted by pull request to the main 
+          Between workshops, we will commence work on developing the fine-grained lesson
+          modules. These lessons will be submitted by pull request to the main 
           repository and each lesson will include:
           \begin{itemize} 
-                  \item associated learning objectives (identified previously)
+                \item associated learning objectives (identified previously)
                 \item content (e.g. speaking notes, presentation material, 
-                        derivations, worked examples, active learning  
-                          exercises, external readings, videos, images)
-                  \item learning assessments (e.g. project descriptions, exam questions) 
+                      derivations, worked examples, active learning  
+                      exercises, external readings, videos, images)
+                \item learning assessments (e.g. project descriptions, exam questions) 
           \end{itemize} 
 
           Interactions will commence primarily via issues, pull requests, and 
@@ -305,13 +315,14 @@ Paul Wilson\\University of Wisconsin - Madison
           Co-PI Davis will be invited to engage in these video conference as 
           part of action research toward the final 
           As progress is made, lessons learned will be recorded by all 
-          participants in a draft instruction manual. 
+          participants in a draft instruction manual.
+          % TODO: what of Sp18?
 
           \subsection{Retrospective Workshop}
           A two-day retrospective workshop (\$15K) at UIUC will wrap up the 
           project. Discussion concerning the process will allow reflection as 
           well as a collection of lessons learned.
-          Experiences live testing the developed course material (for example 
+          Experiences live-testing the developed course material (for example 
           in NPRE412 at UIUC in Fall 2017) will be shared and suggested 
           improvements will be captured as feature requests on GitHub.  
           The lessons learned from the year-long process will be captured:
@@ -352,8 +363,8 @@ Paul Wilson\\University of Wisconsin - Madison
 
           \paragraph{Student Outcomes}
           Students enrolled in NPRE412 at UIUC and peer courses at partner 
-          institutions (USC, UT-Knoxville, Kansas State University, and 
-          UW-Madison) will have an improved experience. Their 
+          institutions (USC, UT---Knoxville, Kansas State University, and 
+          UW---Madison) will have an improved experience. Their 
           curriculum will be bolstered by the comprehensive concept maps 
           underlying their coursework\cite{concept_maps}, as well as exercises 
           and assessment tools reviewed and improved by expert professors at 
@@ -362,10 +373,10 @@ Paul Wilson\\University of Wisconsin - Madison
           \paragraph{UIUC Faculty Outcomes}
           The effort of developing curriculum in this way may be labor 
           intensive initially. However, if the experience is similar to that of 
-          open source software, the maintenance effort will reduce 
-          substantially. Minor improvements and updates to the curriculum 
-          contributed by colleagues will be effectively 'free' in the long 
-          term. 
+          open-source software teams, the required maintenance effort will decrease 
+          substantially as lessons approach maturity. Minor improvements and updates
+          to the curriculum contributed by colleagues will be effectively `free'
+          in the long term. 
 
           \paragraph{UIUC Institutional Outcomes} Openness and collaboration 
           both increase visibility. The leadership of UIUC College of 
@@ -375,13 +386,12 @@ Paul Wilson\\University of Wisconsin - Madison
           support from educational grant-making agencies such as the National 
           Science Foundation and even private foundations such as Moore and 
           Sloan. 
+          % TODO may want a citation on the first sentence of the preceding re increased visibility
 
-          \paragraph{External Outcomes}
-
-          Of perhaps most relevance in the context of this work is the 
-          potential impact externally. This effort should spawn an 
-          instruction-centric community of 
-          practice among colleagues previously primarily connected by research 
+          \paragraph{External Outcomes} Of perhaps most relevance in the
+          context of this work is the potential external impact. This effort
+          should spawn an instruction-centric community of practice among
+          colleagues previously primarily connected by research 
           in their specific technical subdomain. 
 
           \section{Timeline and Deliverables}
