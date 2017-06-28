@@ -13,6 +13,8 @@ I was a GSI at Berkeley for nearly all of the courses in the department.
 So I have seen a lot of different teaching styles and approaches. 
 <br>Largely inefficient: overlapping material between classes; tons of slides; no central location.
 <br>
+Island at Idaho Falls for resources
+<br>
 Example from Steve
 </p>
 <br>
