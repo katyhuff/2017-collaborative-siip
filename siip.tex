@@ -35,6 +35,7 @@
           \newcommand{\authorsite}{arfc.npre.illinois.edu}
 
           \begin{document}
+          \date{May 1, 2017}
           \title{Collaborative Open-Source Curriculum Development}
           \author{\textbf{PI: Kathryn Huff}\\%
                   kdhuff@illinois.edu\\
@@ -124,7 +125,18 @@
           We expect a granular lesson plan---combining fine-grained lesson components
           with a clear dependency graph of prerequisite modules---to assist in 
           overcoming the challenges encountered by Software Carpentry and 
-          others.
+          others. An example of such a dependency graph of learning concepts has been implemented 
+          succesffully for the exercises in the Rosalind\cite{loman_so_2013}
+          computational biology project pictured in Figure \ref{fig:rosalind}.
+
+\begin{figure}[ht!]
+        \begin{center}
+                \includegraphics[height=0.6\textheight]{rosalind.png}
+        \end{center}
+        \caption{Rosalind.info, an educational bioinformatics resource, 
+        organizes exercises based on their dependencies.}
+        \label{fig:rosalind}
+\end{figure}
 
           \section{Proposed Solution}
           We propose a small-scale proof-of-concept for collaborative
@@ -224,7 +236,6 @@
                   \end{subfigure}
                   \label{fig:test}
           \end{figure}
-          \FloatBarrier
 
 \iffalse
           Doing code review at the end of the work isn't useful. What works is 
@@ -264,7 +275,6 @@
           experiment with incorporating these materials into their courses at 
           their home institutions. 
 
-
           Details of the workshops and interim efforts are given in the next 
           subsections.
 
@@ -284,7 +294,7 @@
           who may be interested in adapting and extending this work for their own 
           future courses.
 
-          As indicated in Table \ref{tab:kickoff}, products to be developed in 
+          As indicated in Tables \ref{tab:kickoff1} and \ref{tab:kickoff2}, products to be developed in 
           the first workshop include learning 
           objectives\cite{bloom_bloom_1984}, a concept 
           map\cite{novak_concept_1990}, 
@@ -301,18 +311,10 @@
           \cite{kloeckner_relate_2017,kloeckner_relate_2017-1} and tools like 
           PrairieLearn \cite{west_prairielearn:_2015} will be considered.
 
-\begin{figure}[ht!]
-        \begin{center}
-                \includegraphics[height=0.5\textheight]{rosalind.png}
-        \end{center}
-        \caption{Rosalind.info, an educational bioinformatics resource, 
-        organizes exercises based on their dependencies.}
-        \label{fig:rosalind}
-\end{figure}
           
           \begin{table}[h!]
                   \centering
-          \begin{tabularx}{\textwidth}{r|l|l|X}
+          \begin{tabularx}{\textwidth}{|r|l|l|X|}
                                   \multicolumn{4}{c}{\textbf{Day 1}}\\
                                   \hline
                           \textbf{Time}& \textbf{Activity}& \textbf{Lead}& \textbf{Deliverable}\\
@@ -334,6 +336,14 @@
 17:00& Break&&  \\
 19:00& Dinner&&  \\
 \hline
+          \end{tabularx}
+                  \caption{Preliminary schedule for the Kick-off Workshop, Day 
+                  1.}
+                  \label{tab:kickoff1}
+  \end{table}
+          \begin{table}[h!]
+                  \centering
+          \begin{tabularx}{\textwidth}{|r|l|l|X|}
                                   \multicolumn{4}{c}{}\\
                                   \multicolumn{4}{c}{\textbf{Day 2}}\\
                                   \hline
@@ -353,11 +363,11 @@
 19:00& Dinner&&  \\
 \hline
                   \end{tabularx}
-                  \caption{Preliminary schedule for the Kick-off Workshop}
-                  \label{tab:kickoff}
+                  \caption{Preliminary schedule for the Kick-off Workshop, Day 2.}
+                  \label{tab:kickoff2}
           \end{table}
 
-
+\FloatBarrier
           \subsection{Interim Period}
           Between workshops, the PI and external collaborators will commence 
           work on developing 
